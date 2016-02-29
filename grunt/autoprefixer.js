@@ -1,20 +1,17 @@
 module.exports =  {
     // Development settings
  
-    
-  
-  
     autoprefixer: {
       options: {
         browsers: ['last 30 versions']
       },
       files: {
-        'src/css/style.css': 'src/css/style.css'
+        'css/style.css': 'css/style.css'
       }
     },
     watch: {
       sass: {
-        files: ['src/less/**/*.{less}','src/less/_partials/**/*.{less}'],
+        files: ['less/**/*.{less}','less/_partials/**/*.{less}'],
         tasks: ['sass:dist', 'autoprefixer']
       },
       livereload: {

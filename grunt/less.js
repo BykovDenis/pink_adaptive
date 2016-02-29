@@ -9,9 +9,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/less',
+            cwd: 'less/',
             src: ['*.less'],
-            dest: 'src/css',
+            dest: 'css/',
             ext: '.css'
         }]
     },
@@ -23,9 +23,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/less',
+            cwd: 'less/',
             src: ['*.less'],
-            dest: 'src/css',
+            dest: 'css/',
             ext: '.css'
         }]
     }

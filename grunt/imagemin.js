@@ -2,7 +2,7 @@
     all: {
         files: [{
             expand: true,
-            cwd: 'src/',
+            cwd: '/',
             src: ['img/*.{png,jpg,gif}'],
             dest: 'dist/'
         }]

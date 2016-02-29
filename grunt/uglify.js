@@ -2,7 +2,7 @@ module.exports = {
     all: {
         files: [{
             expand: true,
-            cwd: 'src/js',
+            cwd: 'js/',
             src: '**/*.js',
             dest: 'dist/js',
             ext: '.min.js'

@@ -12,9 +12,9 @@ module.exports = {
     all: {
         files: [{
             expand: true,
-            cwd: 'src/jade',
+            cwd: 'jade/',
             src: '**/*.jade',
-            dest: 'src/',
+            dest: '',
             ext: '.html'
         }]
     }

@@ -7,7 +7,7 @@ module.exports = {
 
     scripts: {
         files: [
-            'src/js/*.js'
+            'js/*.js'
         ],
         tasks: [
             'jshint',
@@ -17,7 +17,7 @@ module.exports = {
 
     styles: {
         files: [
-            'src/less/*.less'
+            'less/*.less'
         ],
         tasks: [
             'less:dev'
@@ -26,7 +26,7 @@ module.exports = {
     
     jade: {
         files: [
-            'src/jade/*.jade'
+            'jade/*.jade'
         ],
         tasks: [
             'jade'
