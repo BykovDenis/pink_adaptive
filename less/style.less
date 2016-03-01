@@ -1,5 +1,26 @@
 @import "variables.less";
 
+/* Подключаем шрифты */
+
+@font-face{
+ 
+    font-family: 'Open Sans Light';
+    src: url('../fonts/Open-Sans-Light.ttf');
+    width: normal;
+    height: normal;
+    
+}
+
+
+@font-face{
+ 
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/Open-Sans-Bold.ttf');
+    width: normal;
+    height: normal;
+    
+}
+
 .body{
     
     wdth: @width-body;
@@ -12,21 +33,115 @@
     
 }
 
+.logo{
+    
+    width: 75px;
+    height: 22px;
+    margin:0;
+    padding: 22px 0;
+    
+}
+
+.main-menu{
+    
+    width: 50px;
+    height: 24px;
+    padding: 21px 0;
+    
+}
+
+.icon-menu{
+    
+    display: inline-block;
+    vertical-align: top;
+    background: url(../img/icon_bin.png) 0 0 no-repeat;
+    width: 50px;
+    height:24px;
+    
+}
+
+.clearfix:after{
+    
+    display: table;
+    clear: both;
+    content: '';
+    
+}
 
 .main-header{
 
-    background: url(../img/bg_header.jpg) 0 0 no-repeat;
-    background-size: 320 486;
-    margin: 0 auto;
-    width: 320px;
-    height: 486px;
+
 
     &__layout{
 
         .layout;
 
     }
+    
+    &__top{
+        
+      padding: 0;
+        /*background-color: rgba(0,0,0,.3); */
+        
+      background:
+        url(../img/img_screen.jpg) 49.6% 70.6% no-repeat,
+        url(../img/img_iphone5_hand.png) 0 100% no-repeat,
+        url(../img/bg_header.jpg) 0 0 no-repeat;
+      background-size: 320 486;
+      margin: 0 auto;
+      width: 320px;
+      height: 486px;
+        
+    }
+    
+    &__col1{
+        
+        float: left;
+        
+    }
+    
+    &__col2{
+        
+        float: right;
+        
+    }
 
 }    
+
+.intro{
+    
+    &__layout{
+        
+        .layout;
+        
+    }
+    
+    &__header{
+        
+        font: 100 @font-size-h1 / @line-height @open-sans-light;
+        color: @color-white;        
+        text-align: center;
+    }
+    
+}
+
+.btn{
+    
+    &__upload{
+        
+        padding: 15.5px 0;
+        
+        width: 281px;
+        
+        font: 600 ((@font-size + 4))/ @line-height;
+        color: @color-white;
+        
+        text-align: center;
+        
+        border-radius: 50%;        
+        
+    }    
+    
+}
             
     
